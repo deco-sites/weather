@@ -8,6 +8,7 @@ import * as $$$2 from "./loaders/availableIcons.ts";
 import * as $$$3 from "./loaders/icons.ts";
 import * as $$$0 from "./loaders/Layouts/ProductCard.tsx";
 import * as $$$1 from "./loaders/List/Sections.tsx";
+import * as $$$4 from "./loaders/weather.ts";
 import * as $$$$$$0 from "./sections/Animation/Animation.tsx";
 import * as $$$$$$1 from "./sections/Cards/IconCardsCarousel.tsx";
 import * as $$$$$$2 from "./sections/Cards/IconCardsCarouselWithImage.tsx";
@@ -60,6 +61,7 @@ import * as $$$$$$48 from "./sections/Product/Wishlist.tsx";
 import * as $$$$$$49 from "./sections/Social/InstagramPosts.tsx";
 import * as $$$$$$50 from "./sections/Social/WhatsApp.tsx";
 import * as $$$$$$51 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$52 from "./sections/Weather/weather.tsx";
 
 const manifest = {
   "loaders": {
@@ -67,12 +69,12 @@ const manifest = {
     "deco-sites/weather/loaders/icons.ts": $$$3,
     "deco-sites/weather/loaders/Layouts/ProductCard.tsx": $$$0,
     "deco-sites/weather/loaders/List/Sections.tsx": $$$1,
+    "deco-sites/weather/loaders/weather.ts": $$$4,
   },
   "sections": {
     "deco-sites/weather/sections/Animation/Animation.tsx": $$$$$$0,
     "deco-sites/weather/sections/Cards/IconCardsCarousel.tsx": $$$$$$1,
-    "deco-sites/weather/sections/Cards/IconCardsCarouselWithImage.tsx":
-      $$$$$$2,
+    "deco-sites/weather/sections/Cards/IconCardsCarouselWithImage.tsx": $$$$$$2,
     "deco-sites/weather/sections/Cards/ImageCardsCarousel.tsx": $$$$$$3,
     "deco-sites/weather/sections/Cards/ImageCardsCarouselWithImage.tsx":
       $$$$$$4,
@@ -110,8 +112,7 @@ const manifest = {
     "deco-sites/weather/sections/Miscellaneous/CookieConsent.tsx": $$$$$$36,
     "deco-sites/weather/sections/Miscellaneous/Slide.tsx": $$$$$$37,
     "deco-sites/weather/sections/Newsletter/Newsletter.tsx": $$$$$$38,
-    "deco-sites/weather/sections/Product/ImageGalleryFrontBack.tsx":
-      $$$$$$39,
+    "deco-sites/weather/sections/Product/ImageGalleryFrontBack.tsx": $$$$$$39,
     "deco-sites/weather/sections/Product/ImageGallerySlider.tsx": $$$$$$40,
     "deco-sites/weather/sections/Product/NotFound.tsx": $$$$$$41,
     "deco-sites/weather/sections/Product/NotFoundChallenge.tsx": $$$$$$42,
@@ -124,6 +125,7 @@ const manifest = {
     "deco-sites/weather/sections/Social/InstagramPosts.tsx": $$$$$$49,
     "deco-sites/weather/sections/Social/WhatsApp.tsx": $$$$$$50,
     "deco-sites/weather/sections/Theme/Theme.tsx": $$$$$$51,
+    "deco-sites/weather/sections/Weather/weather.tsx": $$$$$$52,
   },
   "apps": {
     "deco-sites/weather/apps/decohub.ts": $$$$$$$$$$$0,
