@@ -1,4 +1,4 @@
-import { useSignal, effect } from "@preact/signals";
+import { effect, useSignal } from "@preact/signals";
 import { useEffect } from "preact/compat";
 export interface Props {
   apiKey: string;
@@ -24,18 +24,26 @@ export default function Map({
           center: { lat: -34.397, lng: 150.644 },
           zoom: 8,
         });
-        map.addListener("click", async (e: {latLng: {lat: () => number, lng: () => number}}) => {
-          const data = await invoke["deco-sites/weather"].loaders.weather({lat: e.latLng.lat(), lng: e.latLng.lng()});
-          current.value = (data).current.temperature_2m.toString();
-        });
+        map.addListener(
+          "click",
+          async (e: { latLng: { lat: () => number; lng: () => number } }) => {
+            const data = await invoke["deco-sites/weather"].loaders.weather({
+              lat: e.latLng.lat(),
+              lng: e.latLng.lng(),
+            });
+            current.value = data.current.temperature_2m.toString();
+          },
+        );
       })
       .catch((e) => {
         // do something
       });
   }, []);
   console.log(current.value);
-  return <div>
-    <div id="map" class="w-full h-96"></div>
-    <div>{current}</div>
-  </div>
+  return (
+    <div>
+      <div id="map" class="w-full h-96"></div>
+      <div>{current}</div>
+    </div>
+  );
 }
